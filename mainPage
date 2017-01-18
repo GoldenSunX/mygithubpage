@@ -1,0 +1,221 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Sam Yinger - Full Stack Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link rel="shortcut icon" type="../image/png" href="../images/favicon.png">
+  <script src="js/wow.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500,300,700,800" rel="stylesheet" type="text/css">
+  <meta property="og:image" content="http://s10.postimg.org/mg8dl7x7d/preivew.png/">
+  <meta property="og:title" content="Singapore based Front-End Engineer specializing in building business sites to rich interactive web apps.">
+  <link rel="shortcut icon" type="../image/png" href="images/favicon.png">
+</head>
+<body>
+<div class="main-section">
+  <div class="nav">
+    <h2>SAM<strong>DESIGN</strong>YINGER</h2>
+  </div>
+  <div class="section-content wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+    <h1>FULL-STACK DEVELOPER</h1>
+    <div class="small"><em>...</em></div>
+    <p>...</p>
+  </div>
+</div>
+<div class="section white-bg">
+  <div class="section-content wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+    <div class="title">
+      <h1>About</h1>
+      <img src="images/about-icon.png" width="40px" alt="profile icon">
+    </div>
+
+    <div class="content">
+      <div>
+        <h2>Sam Yinger</h2>
+        <p>
+          Offering creative design solutions to solve business problems is what I do best.<br>
+          I write in JavaScript, CSS, Java, Ruby, and C# . I work with databases like Rails and SQL. ...
+          <br><br>
+          As a developer, I write code that follows current semantic standards. I aim for efficiency while maintaining a readable format.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</div><!-- ./about -->
+
+<div class="section blue-bg">
+  <div class="section-content wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+    <div class="title">
+      <h1>Experience</h1>
+      <img src="images/exp-icon.png" width="40px" alt="experience icon">
+    </div>
+
+    <div class="content">
+      <div>
+        <div class="box">
+          <h2>CSE Undergraduate Grader</h2>
+          <a target="_blank" href="..."><img src="images/link.svg"></a>
+          <div class="small">January 2017 - Present</div>
+        </div>
+        <div class="box">
+          <h2>WebPresented</h2>
+          <a target="_blank" href="..."><img src="images/link.svg"></a>
+          <div class="small">June 2016 - September 2016</div>
+          <p>Web Developer Intern</p>
+        </div>
+        <div class="box">
+          <h2>Perry County Engineer's Office</h2>
+          <div class="small">June 2015 - August 2015</div>
+          <p>Database Intern</p>
+        </div>
+        <div class="box">
+          <h2>TCCI Laboratories</h2>
+          <a target="_blank" href="..."><img src="images/link.svg"></a>
+          <div class="small">May 2015 - June 2015</div>
+          <p>Database Intern</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- ./experience -->
+
+<div class="section white-bg">
+  <div class="section-content wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+    <div class="title">
+      <h1>Skillset</h1>
+      <img src="images/skill-icon.png" width="40px" alt="skill icon">
+    </div>
+
+    <div class="content">
+      <div>
+        <div class="dual-col">
+          <h2>CSS</h2>
+          <div class="w3-progress-container">
+            <div class="w3-progressbar" style="width:80%"></div>
+          </div>
+        </div>
+
+        <div class="dual-col">
+          <h2>HTML</h2>
+          <div class="w3-progress-container">
+            <div class="w3-progressbar" style="width:75%"></div>
+          </div>
+        </div>
+
+        <div class="dual-col">
+          <h2>Javascript</h2>
+          <div class="w3-progress-container">
+            <div class="w3-progressbar" style="width:65%"></div>
+          </div>
+        </div>
+
+        <div class="dual-col">
+          <h2>Java</h2>
+          <div class="w3-progress-container">
+            <div class="w3-progressbar" style="width:80%"></div>
+          </div>
+        </div>
+
+        <div class="dual-col">
+          <h2>JQuery</h2>
+          <div class="w3-progress-container">
+            <div class="w3-progressbar" style="width:60%"></div>
+          </div>
+        </div>
+
+        <div class="dual-col">
+          <h2>Ruby</h2>
+          <div class="w3-progress-container">
+            <div class="w3-progressbar" style="width:60%"></div>
+          </div>
+        </div>
+
+        <div class="dual-col">
+          <h2>Ruby on Rails</h2>
+          <div class="w3-progress-container">
+            <div class="w3-progressbar" style="width:45%"></div>
+          </div>
+        </div>
+
+        <div class="dual-col">
+          <h2>SQL</h2>
+          <div class="w3-progress-container">
+            <div class="w3-progressbar" style="width:55%"></div>
+          </div>
+        </div>
+
+        <div class="dual-col">
+          <h2>C#</h2>
+          <div class="w3-progress-container">
+            <div class="w3-progressbar" style="width:80%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- ./skillset -->
+
+<div class="section blue-bg">
+  <div class="section-content wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+    <div class="title">
+      <h1>Education</h1>
+      <img src="images/education-icon.png" width="40px" alt="motarboard icon">
+    </div>
+
+    <div class="content">
+      <div>
+        <div class="small">May 2018 (Expected)</div>
+        <h2>Bachelors of Computer Science Engineering</h2>
+        <p>The Ohio State University</p>
+      </div>
+    </div>
+  </div>
+</div><!-- ./education -->
+
+<div class="section white-bg" style="border-bottom: 1px solid #eee;">
+  <div class="section-content wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+    <div class="title">
+      <h1>MY WORKS</h1>
+      <img src="images/computer.png" width="40px" alt="computer icon">
+    </div>
+
+    <div class="content">
+      <div>
+
+      </div>
+    </div>
+  </div>
+</div><!-- ./my works -->
+
+<div class="section white-bg">
+  <div class="section-content wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+    <div class="title">
+      <h1>CONTACT ME</h1>
+      <div class="small">Columbus</div>
+      <img src="images/mail-icon.png" width="40px" alt="mail icon">
+    </div>
+
+    <div class="content">
+      <div>
+        <div class="small">I can provide cell number upon email request</div>
+        <h2>yingerCS42@gmail.com</h2><br>
+        <a target="_blank" href="https://github.com/GoldenSunX"><img src="images/github-logo.png"></a>
+        <a target="_blank" href="https://www.linkedin.com/in/samuel-yinger-283979b6"><img src="images/linkedin-icon.png"></a>
+      </div>
+    </div>
+  </div>
+</div><!-- ./contact -->
+
+<footer class="footer section">
+  <div class="section-content">
+    <p>SAM<strong>DESIGN</strong>YINGER</p>
+  </div>
+</footer>
+
+<script>
+    new WOW().init();
+</script>
+</body>
+</html>
