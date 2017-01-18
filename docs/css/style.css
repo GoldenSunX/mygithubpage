@@ -380,4 +380,8 @@ a > img {
     .dual-col.img-col:nth-child(7) {
         margin-bottom: 60px;
     }
+    
+    #github {
+        width: 3em;
+    }
 }
