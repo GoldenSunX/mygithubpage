@@ -274,6 +274,7 @@ h2 {
 
 a > img {
     cursor: pointer;
+    width: 3em;
 }
 
 .dual-col.img-col {
@@ -378,9 +379,5 @@ a > img {
 
     .dual-col.img-col:nth-child(7) {
         margin-bottom: 60px;
-    }
-    
-    #github {
-        width: 3em;
     }
 }
