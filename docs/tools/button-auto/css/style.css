@@ -1,0 +1,64 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#content { 
+    border-radius: 10px;
+    display: inline-block;
+    border: 5px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+    width: 750px;
+    padding: 10px;
+    margin-top: 10px;
+   	background-color: #f0f0ff;
+}
+
+#overview {
+    width: 600px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+#container {
+	min-height: 400px;
+	margin: 10px 10px;
+}
+
+#description {
+	text-align: left;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+#button {
+	display: inline;
+	width:150px;
+	height:100px;
+	font-size:16pt;
+	vertical-align: middle;
+	position: relative;
+	bottom: 150px;
+	margin: 0px;
+	margin-right: 25px;
+}
+
+#fsm {
+	display: inline;
+	margin: 0px;
+	margin-top: 15px;
+}
+
+#demo {
+	text-align: center;
+	border: 5px solid black;
+	border-radius: 10px;
+	height: 350px;
+	background-color: white;
+	margin-left: 10px;
+	margin-right: 10px;
+}

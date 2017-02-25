@@ -1,0 +1,28 @@
+<html>
+<head>
+	<script type="text/javascript" src="js/fsm.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<title>Button FSM</title>
+</head>
+<body onload="init();" style="margin:0px; padding:0px;">
+	<div id="workspace">
+		<div id="content">
+			<h1>Buttons as Finite Automata</h1>
+			<div id="description">
+				<p>
+					You can think of standard pushbutton controls as finite automata. Each state corresponds to some knowledge about where the mouse is and whether it's up or down.
+				</p>
+				<p>
+					Here is a standard HTML button along with a visualization of the finite-state
+		machine that controls its operation. Play around with the button and watch how
+		the operations you perform translate into state transitions in the machine!
+				</p>
+			</div>
+			<div id="demo">
+				<button type="button" id="button">Click Me!</button>
+				<img id="fsm" src="images/q0.png"/>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
