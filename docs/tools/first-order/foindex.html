@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>FOL Parse!</title>
+<link rel="stylesheet" href="style.css">
+<script src="parser_aux.js"></script>
+<script src="peg-0.8.0.min.js"></script>
+<script src="check.js"></script>
+<script src="ui.js"></script>
+<script src="parser_gen.js"></script>
+<script src="presets.js"></script>
+<script>
+var parser = makeParser(["pred", "p", "P"], ["in"], ["fun", "f"], ["0"]);
+</script>
+</head>
+<body>
+
+
+
+<div class="in-div">
+<span class='header'>First-order logic syntax checker</span><br><br>
+<span><a href="help.html">Help</a></span><br>
+<span class="hider-span"><a href="#" id="hider">Show custom symbol input</a></span><br><br>
+<div class="collapsible-grammar">
+Enter any predicates, functions, or constants which should be defined, along with the number of arguments each predicate or function should take (e.g. "Happy 1" or "Loves 2"). The click "Generate". Or choose from one of the presets.
+<div class="in-grammar">
+<div class="grammar-row">
+<span class="grammar-box">Predicates:<br><textarea id="predicates-box">P 1</textarea></span>
+<span class="grammar-box">Infix Predicates:<br><textarea id="infix-box">&lt;</textarea></span>
+<span class="grammar-box">Functions:<br><textarea id="functions-box">f 2
+g *</textarea></span>
+<span class="grammar-box">Constants:<br><textarea id="constants-box">0</textarea></span><br>
+</div>
+</div>
+
+
+<a href="#" class="button" id="grammar-button">Generate</a><br><br>
+</div>
+
+
+Preset:
+<select class="preset-select" id="preset-select">
+<option value="-1">         </option>
+</select><br><br>
+
+<div class="in-grammar">
+<div class="grammar-row">
+<span class="grammar-box">Predicates:<br><span id="predicates-out-list"></span></span>
+<span class="grammar-box">Infix Predicates:<br><span id="infix-out-list"></span></span>
+<span class="grammar-box">Functions:<br><span id="functions-out-list"></span></span>
+<span class="grammar-box">Constants:<br><span id="constants-out-list"></span></span><br>
+</div>
+</div>
+
+
+<hr>
+<div class="in-div-div">
+<input class="in-box" id="in-box" placeholder="Enter a formula" value="for all x. exists y. (x < y and 0 < y)" autofocus></input><br>
+<!-- <a href="#" class="button" id="go-button">Go</a> -->
+</div>
+</div>
+
+
+<div class="paren-out" id="paren-out">&nbsp;</div>
+
+<span class="eqn" id="eqndiv"></span>
+
+<div class="error-div-div">
+<div class="error-div"><div style="padding: 5px;">Click on an error to underline the context.</div>
+<ul id="errors" class="errors"></ul>
+</div>
+</div>
+
+</body>
+</html>
