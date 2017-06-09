@@ -7,7 +7,7 @@
  *
  * The tokens can be any of these operators:
  *
- *    /\   \/  ->  <->  ~
+ *    &   |  →  ↔  ~
  *
  * They can also be the special symbols T and F, parentheses, variables, or a
  * special EOF marker.
@@ -158,12 +158,12 @@ function isVariableStart(input, index) {
  * null.
  */
 function tryReadVariableName(input, index) {	
-	/* Need to start with a letter or underscore. */
-	if (!/[A-Za-z_]/.test(input.charAt(index))) return null;
+	/* Need to start with a letter. SY: removed underscore*/ 
+	if (!/[A-Za-z]/.test(input.charAt(index))) return null;
 
 	/* Keep reading characters while it's possible to do so. */	
 	var result = "";
-	while (/[A-Za-z_0-9]/.test(input.charAt(index))) {
+	while (/[A-Za-z0-9]/.test(input.charAt(index))) {
 		result += input.charAt(index);
 		index++;	
 	}
@@ -215,7 +215,7 @@ function isOperatorStart(input, index) {
  */
 function tryReadOperator(input, index) {
 	/* Case 1: Single-char operator like (, ), ~, T, F. */
-	if (/[()~TF!\u2227\u2228\u2192\u2194\u22A4\u22A5\u00AC]/.test(input.charAt(index))) {
+	if (/[()~TF&|→↔!\u2227\u2228\u2192\u2194\u22A4\u22A5\u00AC]/.test(input.charAt(index))) {
 		return input.charAt(index);
 	}
 	
@@ -271,10 +271,10 @@ function tryReadOperator(input, index) {
  * & and | to /\ and \/.
  */
 function translate(input) {
-	if (input === "&&"  || input === "and" || input === "\u2227") return "/\\";
-	if (input === "||"  || input === "or"  || input === "\u2228") return "\\/";
-	if (input === "=>"  || input === "\u2192" || input === "implies") return "->";
-	if (input === "<=>" || input === "\u2194" || input === "iff") return "<->";
+	if (input === "&"  || input === "&&" || input === "and" || input === "\u2227") return "/\\";
+	if (input === "|"  || input === "||" || input === "or"  || input === "\u2228") return "\\/";
+	if (input === "→"  || input === "=>"  || input === "\u2192" || input === "implies") return "->";
+	if (input === "↔" || input === "<=>" || input === "\u2194" || input === "iff") return "<->";
 	if (input === "not" || input === "!" || input === "\u00AC") return "~";
 	if (input === "\u22A4" || input === "true") return "T";
 	if (input === "\u22A5" || input === "false") return "F";
@@ -302,11 +302,11 @@ function scannerFail(why, start, end) {
 
 /* Function: checkIntegrity
  *
- * Checks the integrity of the input string by scanning for disallowed characters.
+ * Checks the integrity of the input string by scanning for disallowed characters. SY: Removed underscore
  * If any disallowed characters are present, triggers an error.
  */
 function checkIntegrity(input) {
-	var okayChars = /[A-Za-z_0-9\\\/<>\-~()\s\&\|\=\!\u2227\u2228\u2192\u2194\u22A4\u22A5\u00AC]/;
+	var okayChars = /[A-Za-z0-9\\\/<>\-~()\s\&\|\→\↔\=\!\u2227\u2228\u2192\u2194\u22A4\u22A5\u00AC]/;
 	for (var i = 0; i < input.length; i++) {
 		if (!okayChars.test(input.charAt(i))) {
 			scannerFail("Illegal character", i, i + 1);
