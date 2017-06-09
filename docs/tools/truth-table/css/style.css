@@ -4,6 +4,11 @@ body {
 	color: #444;
 }
 
+table#operators {
+	text-align: center;
+	font-family: helvetica;
+}
+
 table.truthTable {
     font-family: helvetica;
     color: #555;
