@@ -15,7 +15,7 @@
  *                         added as appropriate.
  */
 
-/*** Node type for T. ***/
+/*** Node type for T ***/
 function trueNode() {}
 
 trueNode.prototype.evaluate = function(assignment) {
@@ -26,7 +26,7 @@ trueNode.prototype.toString = function(variables) {
 }
 
 
-/*** Node type for F. ***/
+/*** Node type for F ***/
 function falseNode() {}
 
 falseNode.prototype.evaluate = function(assignment) {
@@ -36,7 +36,7 @@ falseNode.prototype.toString = function(variables) {
 	return "&#8869;";
 }
 
-/*** Node type for ~. ***/
+/*** Node type for ~ ***/
 function negateNode(underlying) {
 	this.underlying = underlying;
 }
@@ -49,7 +49,7 @@ negateNode.prototype.toString = function(variables) {
 	return "&not;" + this.underlying.toString(variables);
 }
 
-/*** Node type for /\ ***/
+/*** Node type for & ***/
 function andNode(lhs, rhs) {
 	this.lhs = lhs;
 	this.rhs = rhs;
@@ -62,7 +62,7 @@ andNode.prototype.toString = function(variables) {
 	return "(" + this.lhs.toString(variables) + " &and; " + this.rhs.toString(variables) + ")";
 }
 
-/*** Node type for \/ ***/
+/*** Node type for | ***/
 function orNode(lhs, rhs) {
 	this.lhs = lhs;
 	this.rhs = rhs;
@@ -75,13 +75,13 @@ orNode.prototype.toString = function(variables) {
 	return "(" + this.lhs.toString(variables) + " &or; " + this.rhs.toString(variables) + ")";
 }
 
-/*** Node type for -> ***/
+/*** Node type for → ***/
 function impliesNode(lhs, rhs) {
 	this.lhs = lhs;
 	this.rhs = rhs;
 }
 
-/* Use the equivalcen p -> q   ===   ~p \/ q */
+/* Use the equivalence p -> q   ===   ~p \/ q */
 impliesNode.prototype.evaluate = function(assignment) {
 	return !this.lhs.evaluate(assignment) || this.rhs.evaluate(assignment);
 }
@@ -90,7 +90,7 @@ impliesNode.prototype.toString = function(variables) {
 }
 
 
-/*** Node type for <-> ***/
+/*** Node type for ↔ ***/
 function iffNode(lhs, rhs) {
 	this.lhs = lhs;
 	this.rhs = rhs;
