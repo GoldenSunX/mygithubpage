@@ -6,6 +6,7 @@ body {
 
 table#operators {
 	font-family: helvetica;
+	align: center;
 }
 
 table.truthTable {
