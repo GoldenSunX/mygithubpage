@@ -252,11 +252,20 @@ function wrapOperand(token) {
  *
  * Given a token, reports whether the token is a binary operator.
  */
+/*
 function isBinaryOperator(token) {
 	return token.type === "<->" ||
 	       token.type === "->"  ||
 	       token.type === "/\\" ||
 	       token.type === "\\/";
+}
+*/
+
+function isBinaryOperator(token) {
+	return token.type === "↔" ||
+	       token.type === "→"  ||
+	       token.type === "&" ||
+	       token.type === "|";
 }
 
 /* Function: priorityOf
@@ -265,6 +274,7 @@ function isBinaryOperator(token) {
  * with minimal priority to ensure that when EOF is seen, we pop off all remaining
  * operators.
  */
+/*
 function priorityOf(token) {
 	if (token.type === kScannerConstants.EOF) return -1;
 	if (token.type === "<->") return 0;
@@ -273,17 +283,36 @@ function priorityOf(token) {
 	if (token.type === "/\\") return 3;
 	unreachable("Should never need the priority of " + token.type);
 }
+*/
+
+function priorityOf(token) {
+	if (token.type === kScannerConstants.EOF) return -1;
+	if (token.type === "↔") return 0;
+	if (token.type === "→")  return 1;
+	if (token.type === "|") return 2;
+	if (token.type === "&") return 3;
+	unreachable("Should never need the priority of " + token.type);
+}
 
 /* Function: createOperatorNode
  *
  * Given the LHS and RHS of an expression and the token reprsenting the operator,
  * creates an AST node corresponding to that operator.
  */
+/*
 function createOperatorNode(lhs, token, rhs) {
 	if (token.type === "<->") return new iffNode(lhs, rhs);
 	if (token.type === "->")  return new impliesNode(lhs, rhs);
 	if (token.type === "\\/") return new orNode(lhs, rhs);
 	if (token.type === "/\\") return new andNode(lhs, rhs);
+	unreachable("Should never need to create an operator node from " + token.type);
+}
+*/
+function createOperatorNode(lhs, token, rhs) {
+	if (token.type === "↔") return new iffNode(lhs, rhs);
+	if (token.type === "→")  return new impliesNode(lhs, rhs);
+	if (token.type === "|") return new orNode(lhs, rhs);
+	if (token.type === "&") return new andNode(lhs, rhs);
 	unreachable("Should never need to create an operator node from " + token.type);
 }
 
