@@ -1,5 +1,5 @@
 /**
- * Created by goldensunx on 1/2/17.
+ * Adapted by goldensunx on 1/2/17.
  */
 (function() {
     var MutationObserver, Util, WeakMap, getComputedStyle, getComputedStyleRX,
