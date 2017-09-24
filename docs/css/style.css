@@ -1,3 +1,26 @@
+#table-of-contents {
+    float: right;
+    border: 1px solid #CCC;
+    max-width: 50%;
+    overflow: auto;
+}
+
+#table-of-contents {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #f8f8f8;
+    font-size: 75%;
+    line-height: 100%;
+    text-align: left;
+    box-shadow: 0 0 1em #777;
+    -webkit-box-shadow: 0 0 1em #777;
+    -moz-box-shadow: 0 0 1em #777;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    overflow: auto;
+}
+
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin: 0;
